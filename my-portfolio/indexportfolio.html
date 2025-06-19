@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert CYUBAHIRO | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="flex flex-wrap justify-between items-center px-6 py-4 bg-white shadow sticky top-0 z-10">
+  <h1 class="text-xl font-bold text-gray-800">Robert CYUBAHIRO</h1>
+  <nav id="nav-menu" class="hidden sm:flex space-x-6 text-blue-600 font-semibold">
+    <a href="#projects" class="hover:underline">Projects</a>
+    <a href="#skills" class="hover:underline">Skills</a>
+    <a href="#contact" class="hover:underline">Contact</a>
+  </nav>
+  <button id="menu-btn" class="sm:hidden text-blue-600 font-bold focus:outline-none" aria-label="Toggle menu">
+    ☰
+  </button>
+</header>
+
+<section class="text-center py-16 px-6">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-4">Tech-Driven Changemaker Empowering Africa’s Future</h1>
+  <p class="text-lg mb-6">Software Engineer | Social Innovator | Community Leader</p>
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
+    <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded">Download CV</a>
+    <a href="#projects" class="border border-blue-600 text-blue-600 px-6 py-2 rounded">View My Projects</a>
+  </div>
+</section>
+
+
+  <!-- About Me Section -->
+  <section class="max-w-3xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="leading-relaxed">
+      I’m <strong>Robert CYUBAHIRO</strong>, a Software Engineering student at the African Leadership University, a Mastercard Foundation Scholar,
+      and a Millennium Fellow committed to using technology for social good. I’m the founder of <strong>Barigira Fam</strong> and
+      <strong>EasyBudget Rwanda</strong>, initiatives that address mental health, public wellness, and financial literacy through scalable,
+      community-driven solutions. With experience in tech, data analytics, and leadership, my mission is to equip young Africans with the tools to thrive.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+
+    <div class="bg-white p-6 shadow rounded mb-6">
+      <h3 class="text-xl font-bold mb-2">Barigira Fam</h3>
+      <p class="mb-2">A mental health and wellness initiative supporting vulnerable populations.</p>
+      <p class="mb-2"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      <a href="#" class="text-blue-600 mr-4">Pitch Deck</a>
+      <a href="#" class="text-blue-600">GitHub</a>
+    </div>
+
+    <div class="bg-white p-6 shadow rounded">
+      <h3 class="text-xl font-bold mb-2">EasyBudget Rwanda</h3>
+      <p class="mb-2">A budgeting app for low-income users in Rwanda to track expenses and improve financial literacy.</p>
+      <p class="mb-2"><strong>Tech:</strong> Flutter, Firebase</p>
+      <a href="#" class="text-blue-600 mr-4">Prototype</a>
+      <a href="#" class="text-blue-600">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="max-w-4xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>SPSS</span>
+      <span>Project R</span>
+      <span>Figma</span>
+      <span>Leadership</span>
+      <span>Critical Thinking</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="text-center px-6 py-10">
+    <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+    <p class="mb-6">Feel free to reach out for collaborations or conversations!</p>
+    <div class="flex justify-center space-x-6">
+      <a href="mailto:you@example.com" class="text-blue-600">Email</a>
+      <a href="https://github.com/yourgithub" class="text-blue-600">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedin" class="text-blue-600">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Robert CYUBAHIRO. All rights reserved.
+  </footer>
+// End of the portfolio page
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 640) {
+      navMenu.classList.remove('hidden');
+    } else {
+      navMenu.classList.add('hidden');
+    }
+  });
+  // Ensure the menu is hidden on larger screens
+  if (window.innerWidth >= 640) {
+    navMenu.classList.remove('hidden');
+  } else {
+    navMenu.classList.add('hidden');
+  }
+  // Ensure the menu is hidden on larger screens
+  if (window.innerWidth >= 640) { 
+    navMenu.classList.remove('hidden');
+  } else {
+    navMenu.classList.add('hidden');
+  }
+  </script>
+  </section>
+</body>
+</html>
+<!-- This is a simple portfolio page for Robert CYUBAHIRO, showcasing his projects, skills, and contact information. The design is responsive and uses Tailwind CSS for styling. -->
+<!-- The page includes sections for a hero introduction, about me, projects, skills, contact information, and a footer. -->
+<!-- The projects section highlights two initiatives: Barigira Fam and EasyBudget Rwanda, with links to their pitch decks and GitHub repositories. -->
+<!-- The skills section lists various technical and soft skills relevant to Robert's profile. -->
+<!-- The contact section provides links to email, GitHub, and LinkedIn for networking opportunities. -->
+<!-- The footer includes copyright information. -->
+<!-- The page is designed to be clean, modern, and easy to navigate, making it suitable for showcasing Robert's work and connecting with others in the tech community. -->
+<!-- The page is structured with semantic HTML elements for better accessibility and SEO. -->
+<!-- The use of Tailwind CSS allows for quick styling and responsiveness, ensuring the portfolio looks good on various devices. -->
+<!-- The portfolio is designed to be easily maintainable, with clear sections and a straightforward layout. -->
+<!-- The code is well-commented to explain the purpose of each section, making it easier for future developers to understand and modify. -->
+<!-- The portfolio can be expanded with additional projects, skills, or sections as Robert's career progresses. -->
+<!-- The design is minimalist, focusing on content and usability rather than flashy graphics, which aligns with modern web design trends. -->
