@@ -21,7 +21,7 @@ portfolio/
  tailwind.min.css        # Linked via CDN (optional to self-host)
  README.md               # Project description and setup
 
-## 🔧 Setup Instructions
+## Setup Instructions
 1. Clone or download the repository
 2. Open `index.html` in any browser
 3. Edit content or styles as needed (no build steps required)
